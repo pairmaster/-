@@ -1,0 +1,190 @@
+:root {
+    /* Color */
+    --white-color: #ffffff;
+    --black-color: #140a00;
+    --grey-light-color: #f1f1ff;
+    --yellow-color: #ffff66;
+    view-transition-name: root;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Roboto;
+    display: block;
+    margin: 8px;
+}
+
+html{
+    display: block;
+}
+
+div{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+.박스 {
+    width: 380px;
+    padding: 5px;
+    border: 1px lightgrey solid;
+    margin: 3px 0px;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+element.style {
+    height: 22pt;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+    font-family: sans-serif,'돋움',dotum,Helvetica;
+    font-family: sans-serif,'돋움',dotum,Helvetica;
+font-size: 9pt;
+text-align: center;
+border-collapse: collapse;
+height: 22pt;
+}
+
+element.style {
+    width: 40pt;
+}
+
+table, td {
+    border: 1pt solid lightgrey;
+    border-collapse: collapse;
+}
+
+p, br, body, td, select, input, form, textarea, option {
+    font-family: sans-serif, '돋움', dotum, Helvetica;
+    font-size: 9pt;
+    text-align: center;
+    padding: 1px 6px;
+}
+
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    padding: 1px;
+}
+
+element.style {
+    text-align: left;
+}
+
+element.style {
+    width: 380px;
+    margin: 3px 0px;
+}
+
+element.style {
+    border: 0px;
+    text-align: left;
+}
+
+.교시 {
+    width: 60pt;
+    height: 25pt;
+    text-align: center;
+    background-color: #f1f1ff;
+    border: 1px lightgrey solid;
+}
+
+.제목 {
+    width: 60pt;
+    height: 25pt;
+    text-align: center;
+    background-color: #f1f1ff;
+    border: 1px lightgrey solid;
+}
+
+.내용 {
+    width: 60pt;
+    height: 25pt;
+    text-align: center;
+    background-color: #FFFEEE;
+    border: 1px lightgrey solid;
+}
+
+.변경 {
+    width: 60pt;
+    height: 25pt;
+    text-align: center;
+    background-color: #ffff66;
+    border: 1px lightgrey solid;
+}
+
+element.style {
+    text-align: center;
+    background-color: #f1f1ff;
+}
+
+.박스2 {
+    width: 368px;
+    padding: 5px;
+    border: 1px lightgrey solid;
+    margin: 3px 0px;
+}
+
+head {
+    display: none;
+}
+
+meta {
+    display: none;
+}
+
+title {
+    display: none;
+}
+
+style {
+    display: none;
+}
+
+script {
+    display: none;
+}
+
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+
+.내용2 {
+    height: 20pt;
+    text-align: center;
+    background-color: #FFFEEE;
+    border: 1px lightgrey solid;
+    padding: 1px;
+}
+
+option {
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+script {
+    display: none;
+}

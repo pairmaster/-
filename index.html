@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>놀이용 수업 중학교 시간표</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="cssscreen.css">
+</head>
+<body>
+    <div id="mesg3"></div>
+    <div id="시간표열람">
+        <table class="박스">
+            <tbody>
+                <tr style="height:22pt;">
+                    <td style="width:40pt;">학교명</td>
+                <td id="학교명">놀이용 수업 중학교</td>
+                    <td>일자</td>
+                    <td style="text-align:left;">
+                        <select id="일자" name="일자" onchange="일자_change()">
+                        <option value="1" selected>24-05-05 ~ 24-05-10</option>
+                        <option value="2">24-05-12 ~ 24-05-17</option>
+                    </select>
+                </td>
+                </tr>
+        <tr style="height:20pt;">
+        <td>교사</td>
+                <td style="text-align:left;">
+                    <select name="교사" id="교사" onchange="교사_change()">
+                        <option value="">-교사-</option>
+                        <optgroup label="국어 교사">
+                        <option value="1">1 김평*</option>
+                        <option value="2">2 김국*</option>
+                        <option value="3">3 김국*</option>
+                        <option value="4">4 이거*</option>
+                        <option value="5">5 김가*</option>
+                    </optgroup>
+                        <optgroup label="영어 교사">
+                        <option value="6">6 이 명</option>
+                        <option value="7">7 범퍼</option>
+                        <option value="8">8 한글*</option>
+                        <option value="9">9 이나*</option>
+                    </optgroup>
+                        <optgroup label="수학 교사">
+                        <option value="10">10 지우*</option>
+                        <option value="11">11 걸범</option>
+                        <option value="12">12 박숙*</option>
+                        <option value="13">13 박 남</option>
+                    </optgroup>
+                        <optgroup label="사회과 교사">
+                        <option value="14">14 김역*</option>
+                        <option value="15">15 손도*</option>
+                        <option value="16">16 김아**</option>
+                        <option value="17">17 김사*</option>
+                        <option value="18">18 김명*</option>
+                        <option value="19">19 포자*</option>
+                        <option value="20">20 안잎*</option>
+                    </optgroup>
+                        <optgroup label="과학 교사">
+                        <option value="21">21 김아*</option>
+                        <option value="22">22 민숙</option>
+                        <option value="23">23 슬로*</option>
+                        <option value="24">24 진달*</option>
+                    </optgroup>
+                        <optgroup label="한문 교사">
+                        <option value="25">25 김전*</option>
+                    </optgroup>
+                        <optgroup label="미술 교사">
+                        <option value="26">26 석류</option>
+                        <option value="27">27 임잔*</option>
+                        <option value="28">28 이마*</option>
+                    </optgroup>
+                        <optgroup label="체육 교사">
+                        <option value="29">29 으 재</option>
+                        <option value="30">30 김아*</option>
+                        <option value="31">31 은소*</option>
+                        <option value="32">32 강고*</option>
+                    </optgroup>
+                        <optgroup label="기술•가정 교사">
+                        <option value="33">33 이 매</option>
+                        <option value="34">34 송바*</option>
+                        <option value="35">35 김 별</option>
+                    </optgroup>
+                        <optgroup label="정보 교사">
+                        <option value="36">36 장새*</option>
+                    </optgroup>
+                        <optgroup label="훈육 교사">
+                        <option value="37">37 김아*</option>
+                    </optgroup>
+                        <optgroup label="음악 교사">
+                        <option value="38">38 귀요*</option>
+                        <option value="39">39 남누*</option>
+                        <option value="40">40 걸타</option>
+                    </optgroup>
+                        <optgroup label="육아 교사">
+                        <option value="41">41 걸민</option>
+                    </optgroup>
+                        </select>
+                </td>
+        <td>학급</td>
+        <td style="text-align:left;">
+            <select name="학급" id="학급" onchange="학급_change()">
+                <optgroup label="1학년">
+                <option value="1-1" selected>1-1</option>
+                <option value="1-2">1-2</option>
+                <option value="1-3">1-3</option>
+                <option value="1-4">1-4</option>
+                <option value="1-5">1-5</option>
+                <option value="1-6">1-6</option>
+            </optgroup>
+                <optgroup label="2학년">
+                <option value="2-1">2-1</option>
+                <option value="2-2">2-2</option>
+                <option value="2-3">2-3</option>
+                <option value="2-4">2-4</option>
+                <option value="2-5">2-5</option>
+                <option value="2-6">2-6</option>
+            </optgroup>
+                <optgroup label="3학년">
+                <option value="3-1">3-1</option>
+                <option value="3-2">3-2</option>
+                <option value="3-3">3-3</option>
+                <option value="3-4">3-4</option>
+                <option value="3-5">3-5</option>
+                <option value="3-6">3-6</option>
+            </optgroup>
+                </select>
+        </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="mesg2"></div>
+    <div id="시간표">
+        <table style="width: 380px; margin: 3px 0px;">
+            <tbody>
+                <tr>
+                    <td class="내용2" style="border:0px; text-align:left;">
+                        <input type="button" onclick="ba_NextDisp(-1);" value="◀">
+                    </td>
+                    <td style="border:0px;" colspan="5" class="내용2">제 1학년 1반 시간표</td>
+                    <td class="내용2" style="border:0px; text-align:right;">
+                        <input type="button" onclick="ba_NextDisp(1);" value="▶">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="교시">교시</td>
+                    <td class="제목">일(5)</td>
+                    <td class="제목">월(6)</td>
+                    <td class="제목">화(7)</td>
+                    <td class="제목">수(8)</td>
+                    <td class="제목">목(9)</td>
+                    <td class="제목">금(10)</td>
+                </tr>
+                <tr>
+                    <td class="교시">1(08:50)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">과학<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">국어<br>김국</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">스포츠<br>동아리</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">영어<br>이명</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">도덕<br>김명</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">사회<br>김아</td>
+                </tr>
+                <tr>
+                    <td class="교시">2(09:45)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">미술<br>석류</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">기가<br>이매</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">기가<br>이매</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">미술<br>석류</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">국어<br>김국</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">도덕<br>김명</td>
+                </tr>
+                <tr>
+                    <td class="교시">3(10:40)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">영어<br>이명</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">체육<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">국어<br>김국</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">국어<br>김국</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">기가<br>이매</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">정보<br>장새</td>
+                </tr>
+                <tr>
+                    <td class="교시">4(11:35)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">체육<br>으재</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">과학<br>민숙</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">사회<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">과학<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">체육<br>으재</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">영어<br>이명</td>
+                </tr>
+                <tr>
+                    <td class="교시">5(13:30)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">사회<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">영어<br>이명</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">수학<br>지우</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">수학<br>걸범</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">과학<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">수학<br>지우</td>
+                </tr>
+                <tr>
+                    <td class="교시">6(14:25)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">훈육<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">수학<br>걸범</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">음악<br>걸타</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">사회<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">훈육<br>김아</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">육아<br>걸민</td>
+                </tr>
+                <tr>
+                    <td class="교시">7(15:20)</td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">육아<br>걸민</td>
+                    <td class="내용"></td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">동아리<br>김아</td>
+                    <td class="내용"></td>
+                    <td class="내용" style="padding: 4px 0px 4px 0px;">음악<br>걸타</td>
+                    <td class="내용"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="박스2" style=" width: 380px; margin: 3px 0px; text-align: center;background-color: #f1f1ff;;">
+        <span id="수정일">수정일: 2024-05-04 16:00:40</span>
+    </div>
+    <div id="mesg3"></div>
+    <p style="text-align:left;">&nbsp;</p>
+    <script src="./main.js" charset="UTF-8"></script>
+</body>
+</html>
